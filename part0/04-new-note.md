@@ -4,9 +4,7 @@
 sequenceDiagram
 
 Client->>Server: POST/ https://fullstack-exampleapp.herokuapp.com/new_note
-Note over Client: user submits note
-
-
+Note right of Client: user submits note
 Server-->>Client: 302 URL Redirect
 Client->>Server: GET/ https://fullstack-exampleapp.herokuapp.com/notes
 Server-->>Client:
